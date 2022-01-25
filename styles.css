@@ -1,0 +1,79 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin:0;
+}
+header{
+    background-image: url("images/bg-hero-mobile.svg");
+    background-size: cover;
+    width:100%;
+    padding-top: 8%;
+    padding-left: 4%;
+    padding-right:4%;
+}
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.header-logo{
+    width:30%;
+}
+.header-p{
+    text-align: center;
+}
+.try-btn{
+    float:right;
+    background-color: #fff;
+    border:none;
+    border-radius:25px;
+    width:8em;
+    padding:2%;
+}
+.get-started-btn{
+    display:block;
+    margin:auto;
+    background-color:hsl(322, 100%, 66%);
+    color:#fff;
+    border:none;
+    border-radius:25px;
+    padding:5%;
+    width:20em;
+}
+.mockup{
+    width:310px;
+    height:230px;
+    display: block;
+    margin:auto;
+    margin-top: 15%;
+}
+
+.grow-main,.flow-main,.users-main{
+    width:90%;
+    border-radius:25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:2%;
+    margin:auto;
+}
+.grow-img,.flow-img,.users-img{
+    width:210px;
+    height:200px;
+    display: block;
+    margin:auto;
+}
+.ready-build{
+    margin:auto;
+    border-radius:25px;
+    width:90%;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.f,.twitter,.instagram{
+    border-radius: 50%;
+    border-color:hsl(193, 100%, 96%);
+}
+
+footer{
+    background-color:  hsl(192, 100%, 9%);
+    color:hsl(193, 100%, 96%);
+}
