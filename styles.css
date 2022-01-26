@@ -17,7 +17,7 @@ header::before {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(186, 200, 216, 0.171);
+    background-color: rgba(160, 233, 229, 0.781);
     z-index:-2;
 }
 h1,h2{
@@ -113,11 +113,10 @@ p{
     border-color: #fff;
 }
 .footer-logo{
-    margin-top: 30%
+    margin-top: 30%;
+    fill:#fff;
 }
-.footer-logo::after{
-    color: #fff;
-}
+
 footer{
     z-index: -2;
     padding-top: 20%;
@@ -165,4 +164,105 @@ footer{
     margin: 5px 2px;
     border-radius: 50%;
     border: white;
+}
+
+@media (min-width: 1260px)  {
+    header{
+        background-image: url("images/bg-hero-desktop.svg");
+        background-repeat: no-repeat;
+        padding-top: 3%;
+   
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(186, 200, 216, 0.171);
+        z-index:-2;
+    }
+    .header-logo{
+        width:20%;
+    }
+    .main-header,footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .grow-main,.flow-main,.users-main{
+        display: flex;
+        flex-direction: row-reverse;   
+    }
+    h2,p{
+        text-align: left;
+    }
+    .main-content{
+      width:40%;
+      float:left;
+      justify-content: left;
+    }
+    .main-img{
+       margin-left: 10%;
+    }
+    .mockup{
+        width:600px;
+        height:480px;  
+    }
+    .try-btn{
+        width:10%;
+        padding:1%;
+    }
+    .get-started-btn{
+        padding:3%;
+        width:50%;
+    }
+    .content{
+        margin-bottom: 10%;
+    }
+    .grow-img,.flow-img,.users-img{
+        width:300px;
+        height:300px;
+    }
+    .grow-main,.flow-main,.users-main{
+        width:80%;
+        border-radius:25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding:2%;
+        padding-top: 10%;
+        margin:auto;
+        margin-bottom: 5%;
+    }
+    .grow-content,.flow-content,.users-content{
+        width: 44%;
+        text-align: left;
+        margin-left: 5%;
+    }
+   
+    .ready-build{
+        position: absolute;
+        padding-bottom: 3%;
+        padding-top:3%;
+        margin-top: -5%;
+        margin-left: 30%;
+        margin-bottom: 10%;
+        width:40%;
+        text-align: center;
+    }
+    .ready{
+        text-align: center;
+    }
+    footer{
+        padding-top: 15%;
+    
+    }
+    .footer-logo{ 
+        fill:#fff;
+    }
+   
+    
+    .footer-column2{
+        width:40%;
+        float:left
+    }
 }
