@@ -17,7 +17,7 @@ header::before {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(160, 233, 229, 0.781);
+    background-color: rgba(151, 228, 228, 0.158);
     z-index:-2;
 }
 h1,h2{
@@ -46,7 +46,10 @@ h1{
     width:8em;
     padding:2%;
 }
-.get-started-btn{
+.try-btn:hover{
+    color:hsl(208, 11%, 55%);
+}
+.get-started-btn1,.get-started-btn2{
     display:block;
     margin:auto;
     background-color:hsl(322, 100%, 66%);
@@ -57,6 +60,9 @@ h1{
     padding:5%;
     width:20em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.get-started-btn1:hover,.get-started-btn2:hover{
+    background-color:hsl(322, 81%, 75%);
 }
 .mockup{
     width:310px;
@@ -105,16 +111,14 @@ p{
     font-size:large;
     padding-bottom: 3%;
 }
-.fab{
-    padding: 20px;
-    font-size: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border-color: #fff;
+h4:hover{
+  text-decoration: underline;  
 }
-.footer-logo{
+
+#footer-logo{
     margin-top: 30%;
-    fill:#fff;
+    margin-bottom: 80%;
+    width:250px;
 }
 
 footer{
@@ -124,14 +128,22 @@ footer{
     background-color:  hsl(192, 100%, 9%);
     color:hsl(193, 100%, 96%);
 }
+
 .footer-row{
-    height:250px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 0%;
 }
+
 .footer-column1{
     float: left;
     display: flex;
     flex-direction: column;
-    margin-top: 6%;
+    width:10%;
+    margin-top: 10%;
+}
+.icon1{
+    padding-top:25%;
 }
 .icon2{
     padding-top: 6.2em;
@@ -140,9 +152,10 @@ footer{
    padding-top: 2em;
 }
 .footer-column2{
-    float: right;
+    float: left;
     display: flex;
     width:90%;
+    margin-top: 30%;
     flex-direction: column;  
 }
 .footer-p{
@@ -152,18 +165,36 @@ footer{
     padding-top: 5%;
 }
 .social-icons{
-    width:65%;
-    margin:auto;
+    width:100%;
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+small{
+    position:absolute;
+    bottom:-2780px;
+    left:-300px;
+    font-size: 10px;
 }
 
 .fab{
-    padding: 20px;
-    font-size: 20px;
-    width: 10px;
+    padding: 10px;
+    width: 20px;
     text-align: center;
-    margin: 5px 2px;
     border-radius: 50%;
-    border: white;
+    border-left: 1px solid #fff;
+    border-top:1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.fab:hover{
+    color:hsl(322, 100%, 66%);
+    border-left: 1px solid hsl(322, 100%, 66%);
+    border-top:1px solid hsl(322, 100%, 66%);
+    border-bottom: 1px solid hsl(322, 100%, 66%);
+    border-right: 1px solid hsl(322, 100%, 66%);
 }
 
 @media (min-width: 1260px)  {
@@ -180,7 +211,7 @@ footer{
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-color: rgba(186, 200, 216, 0.171);
+        background-color: rgba(151, 228, 228, 0.158);
         z-index:-2;
     }
     .header-logo{
@@ -194,8 +225,11 @@ footer{
         display: flex;
         flex-direction: row-reverse;   
     }
-    h2,p{
+    h1,h2,.header-p,p{
         text-align: left;
+    }
+    h1{
+        font-size: 50px;
     }
     .main-content{
       width:40%;
@@ -213,7 +247,10 @@ footer{
         width:10%;
         padding:1%;
     }
-    .get-started-btn{
+    .get-started-btn1{
+        margin-left: 0;
+    }
+    .get-started-btn1,.get-started-btn2{
         padding:3%;
         width:50%;
     }
@@ -256,13 +293,49 @@ footer{
         padding-top: 15%;
     
     }
-    .footer-logo{ 
-        fill:#fff;
+    #footer-logo{
+        margin-bottom: 0;
     }
-   
-    
-    .footer-column2{
-        width:40%;
-        float:left
+    .footer-row{
+        display: flex;
+        flex-direction:row;
     }
+    .footer-column1{
+        flex:15%;
+        margin-top:-5%;
+        margin-left:2%;
+    }
+    .icon1{
+        padding-top: 15%;
+    }
+    .icon2{
+        padding-top: 4.7em;
+    }
+   .footer-column2{
+        flex:25%;
+        padding-top: 5%;
+        margin-top: 0%;
+        margin-left:-17%;
+   }
+  
+   .footer-headings{
+        flex:25%;
+        column-count:2;
+        margin-left:5%;
+   }
+   .career{
+       padding-top:12%;
+   }
+  .social-icons{
+       margin-top: 6%;
+       margin-right: 2%;
+       flex:25%;
+       float: right;
+  }}
+small{
+    position:absolute;
+    margin-bottom: 20%;
+    margin-left:91%;
+    font-size:small;
+
 }
