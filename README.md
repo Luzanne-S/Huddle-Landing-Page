@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./huddle.png)
+![](images/huddle.png)
 
 
 ### Links
