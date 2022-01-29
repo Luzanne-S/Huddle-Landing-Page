@@ -85,6 +85,10 @@ h1{
 .users-main{
    margin-bottom:55%;
 }
+.flow-main{
+    display: flex;
+    flex-direction:column-reverse;
+}
 .grow-img,.flow-img,.users-img{
     width:210px;
     height:200px;
@@ -173,7 +177,7 @@ footer{
 }
 small{
     position:absolute;
-    bottom:-2780px;
+    bottom:-2820px;
     left:-300px;
     font-size: 10px;
 }
@@ -228,6 +232,7 @@ small{
     h1,h2,.header-p,p{
         text-align: left;
     }
+   
     h1{
         font-size: 50px;
     }
@@ -260,6 +265,7 @@ small{
     .grow-img,.flow-img,.users-img{
         width:300px;
         height:300px;
+        margin-top: -5%;
     }
     .grow-main,.flow-main,.users-main{
         width:80%;
@@ -274,6 +280,7 @@ small{
         width: 44%;
         text-align: left;
         margin-left: 5%;
+        margin-top: -3%;
     }
    
     .ready-build{
@@ -334,7 +341,7 @@ small{
   }}
 small{
     position:absolute;
-    margin-bottom: 20%;
+    margin-bottom: 35%;
     margin-left:91%;
     font-size:small;
 
